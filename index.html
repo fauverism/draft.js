@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>draft.js</title>
+		<script src="draft.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="display"></div>
+		<script type="template" id="template">
+ 		   <h2>
+     		 <a href="{{href}}">
+      		  {{title}}
+     		 </a>
+    		</h2>
+    		{{snippet}}
+		</script>
+  		<script type="text/javascript">
+			var page = new Page();
+			page.load("home.json");
+		</script>
+	</body>
+</html>
