@@ -6,14 +6,10 @@ Page.prototype.update = function (data){
        var template = document.querySelector('#template').innerHTML;
        var result = document.querySelector('.result');
  		console.log(data);
-    // Accepts a template and data. Searches through the
-    // data, and replaces each key in the template, accordingly.
    var attachTemplateToData = function(template, data) {
         var i = 0,
             fragment = '';
         console.log(data);
- 
-        // For each item in the object, make the necessary replacement
         function replace(obj) {
             var t, key, reg;
  
@@ -25,9 +21,7 @@ Page.prototype.update = function (data){
             return t;
         }
  
-        //for (; i < len; i++) {
             fragment += replace(data);
-        //}
  
         return fragment;
     };
